@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/0e8017d933.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="logo.png" class="logo" alt="Logo"> -->
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" id="menu-toggle"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, I'm <span>Keshav Sharma</span></h1>
+                <p>I am a passionate and enthusiastic frontend developer <br> with a solid foundation in HTML, CSS, and
+                    JavaScript.</p>
+                <p> I have honed my skills through academic projects and <br> personal initiatives, focusing on
+                    creating user-friendly <br>and responsive web applications.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" data-tab="experience" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" data-tab="education" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>C/C++</span></li>
+                            <li><span>SQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                            <!-- <li><span>Add jobs in future</span></li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Chandigadh University</span><br>Bachelor of Computer Application <br>2025</li>
+                            <li><span>School 2</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div>
+                    <h2>Weather App</h2>
+                    <p><b>Real-Time Weather Data:</b> The web app provides up-to-date weather information, including
+                        current
+                        temperature, humidity, wind speed, and precipitation levels, sourced from reliable
+                        meteorological APIs.</p>
+
+                    <p><b> User-Friendly Interface:</b> Designed with a clean and intuitive interface, users can easily
+                        access
+                        weather details for their current location or search for weather conditions in different cities
+                        around the world.</p>
+
+                    <p> <b>Forecast Capabilities:</b> In addition to current conditions, the app offers detailed weather
+                        forecasts for the next several days, helping users plan their activities accordingly.</p>
+
+                    <p> <b>Interactive Maps:</b> The app features interactive weather maps displaying radar images,
+                        weather
+                        patterns, and severe weather alerts, giving users a visual understanding of weather conditions.
+                    </p>
+
+                    <p><b>Customizable Alerts:</b> Users can set up personalized weather alerts to receive notifications
+                        about
+                        significant weather changes, such as storms, extreme temperatures, or high winds, ensuring they
+                        stay informed and prepared.</p>
+
+                    <p> <b>Mobile Responsiveness:</b> Optimized for both desktop and mobile devices, the app provides a
+                        seamless user experience across all platforms, allowing users to check the weather on the go.
+                    </p>
+                    <a href="https://mwfyju9uc3m4uhwpobev8q.on.drv.tw/Wheather%20App/"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <h2>Project 2</h2>
+                    <p> <b> Design Layout:</b> Use HTML for the structure, dividing the page into sections like header,
+                        main content, and footer.</p>
+                    <p> <b>Photo Gallery:</b> Implement a responsive photo gallery using CSS Grid or Flexbox, with each
+                        image in its own container.</p>
+                    <p> <b>Styling:</b> Apply CSS to style the gallery, ensuring it’s visually appealing across devices.
+                    </p>
+                    <p> <b>Contact Form:</b> Add a simple contact form with basic fields (name, email, message) using
+                        HTML.</p>
+                    <p> <b>Hosting:</b> Upload the files to a web hosting service like Drv.tw to make the site
+                        accessible online.</p>
+                    <a href="https://mwfyju9uc3m4uhwpobev8q.on.drv.tw/Photo_gallery/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-location-dot"></i>Chandigarh , India</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8002635587</p>
+                    <p><i class="fa-solid fa-envelope"></i> keshavsharma3758@gmail.com</p>
+                    <a href="https://drive.google.com/file/d/1DWrBaTxqz4QbBktJOcjUkYvjRLOYm3xT/view?usp=sharing"
+                        download class="btn btn2">Resume</a>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/whotf.keshav_"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/keshavcreation02"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/keshavcreation02/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5b8ac39e-0238-4946-8938-f779ad0e786d">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Keshav Sharma. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
